@@ -51,6 +51,7 @@ h6 {
 }
 
 #preloader:before {
+  text-align: justify;
   content: "";
   position: fixed;
   top: calc(50% - 30px);
