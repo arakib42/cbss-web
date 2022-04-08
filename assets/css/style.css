@@ -51,7 +51,7 @@ h6 {
 }
 
 #preloader:before {
-  text-align: justify;
+  text-align: justify !important;
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -548,9 +548,32 @@ section {
   color: #0f2f57;
 }
 
+@media (max-width: 992px) {
+  .section-title {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .section-title {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .section-title {
+    padding-top: 100px;
+  }
+}
+@media (max-height: 500px) {
+  .section-title {
+    padding-top: 100px;
+  }
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .container .content  {
+  text-align: center;
+}
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -559,6 +582,7 @@ section {
   list-style: none;
   padding: 0;
 }
+
 .about .content ul li {
   padding-left: 28px;
   position: relative;
@@ -576,6 +600,7 @@ section {
 }
 .about .content p:last-child {
   margin-bottom: 0;
+  text-align: justify;
 }
 .about .content .btn-learn-more {
   font-family: "Raleway", sans-serif;
@@ -1218,7 +1243,9 @@ section {
   font-size: 20px;
   margin: 0 2px;
 }
-
+.advisor_name {
+  text-transform: uppercase;
+}
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1243,6 +1270,9 @@ section {
 }
 .team .member .member-info {
   padding-left: 30px;
+}
+.team .member .member-info .designation {
+  font-weight: bold;
 }
 .team .member h4 {
   font-weight: 700;
